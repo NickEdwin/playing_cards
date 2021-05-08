@@ -5,12 +5,16 @@ describe "Landing page" do
     visit "/"
     expect(page).to have_content("Card Shuffler!")
   end
-  
+
   it "displays all cards" do
     visit "/"
-    expect(page).to have_content("The 2 of Clubs")
-    expect(page).to have_content("The 2 of Hearts")
-    expect(page).to have_content("The 2 of Diamonds")
-    expect(page).to have_content("The 2 of Spades")
+    expect(page).to have_content("The 2 of ♣")
+    expect(page).to have_content("The 2 of ♥")
+    expect(page).to have_content("The 2 of ♦")
+    expect(page).to have_content("The 2 of ♠")
+  end
+
+  it 'contains a button to shuffle the cards' do
+    page.has_button?('Shuffle the cards!')
   end
 end
