@@ -1,24 +1,41 @@
-# README
+# Altvia Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of Contents
 
-Things you may want to cover:
+- [Introduction](#introduction)
+- [Background Information](#background-information)
+- [Running Instructions](#running-instructions)
+- [Images](#images)
 
-* Ruby version
+<!-- Brief Description -->
 
-* System dependencies
+## Introduction  
+A card shuffler as made for an initial Altvia coding challenge.  
 
-* Configuration
+This app will first generate a full deck of 52 playing cards (jokers excluded.)  
+Users can then click the "Shuffle the cards!" button to randomly shuffle the cards displayed on screen.  
+Users can then click the "Unshuffle the cards!" button to return the cards to their original order.  
 
-* Database creation
+## Background Information  
+This is application is built with Ruby 2.5.3 and Rails 6.0.3.4.  
+RSpec was used for testing. [Testing Files Here](https://github.com/NickEdwin/playing_cards/blob/main/spec)  
 
-* Database initialization
+## Running Instructions  
+To view live demo on Heroku [Click Here!](https://altvia-cards.herokuapp.com/)  
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+To setup locally:
+* Clone this repo by running the following commands in your terminal:  
+    * `git clone git@github.com:NickEdwin/playing_cards.git`  
+    * `cd playing_cards`  
+    * `bundle install`  
 
-* Deployment instructions
+When you run `rspec` you should have all test currently passing.   
 
-* ...
+
+## Images  
+Gif of page with functionality:  
+![Sample Animation](https://s3.gifyu.com/images/card---shuffler.gif)  
+
+Testing Coverage at 100%:  
+![Test Coverage](https://i.imgur.com/O0zvLby.png)  
