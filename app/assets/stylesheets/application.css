@@ -13,3 +13,106 @@
  *= require_tree .
  *= require_self
  */
+
+ .shufflebtn {
+ 	box-shadow:inset 0px 1px 0px 0px #caefab;
+ 	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+ 	background-color:#77d42a;
+ 	border-radius:6px;
+ 	border:1px solid #268a16;
+ 	display:inline-block;
+ 	cursor:pointer;
+ 	color:#306108;
+ 	font-family:Arial;
+ 	font-size:15px;
+ 	font-weight:bold;
+ 	padding:6px 24px;
+ 	text-decoration:none;
+ 	text-shadow:0px 1px 0px #aade7c;
+ }
+ .shufflebtn:hover {
+ 	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+ 	background-color:#5cb811;
+ }
+ .shufflebtn:active {
+ 	position:relative;
+ 	top:1px;
+ }
+
+ .unshufflebtn {
+ 	box-shadow:inset 0px 1px 0px 0px #f29c93;
+ 	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+ 	background-color:#fe1a00;
+ 	border-radius:6px;
+ 	border:1px solid #d83526;
+ 	display:inline-block;
+ 	cursor:pointer;
+ 	color:#ffffff;
+ 	font-family:Arial;
+ 	font-size:15px;
+ 	font-weight:bold;
+ 	padding:6px 24px;
+ 	text-decoration:none;
+ 	text-shadow:0px 1px 0px #b23e35;
+ }
+ .unshufflebtn:hover {
+ 	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+ 	background-color:#ce0100;
+ }
+ .unshufflebtn:active {
+ 	position:relative;
+ 	top:1px;
+ }
+
+.deck
+{
+width:50%;
+margin: 20px auto;
+background:dodgerblue;
+border:solid 10px black;
+padding: 10px;
+border-radius:10px;
+text-align: center;
+color:white;
+}
+
+.card
+{
+padding: 10px;
+border: solid 1px #808080;
+background-color: white;
+display: inline-block;
+border-radius: 10px;
+font-size: 14pt;
+text-align: center;
+color:black;
+margin: 3px;
+}
+
+.card .rank{
+	font-size:15pt;
+	font-family: sans-serif;
+}
+
+.card .suit
+{
+	background-image: url('https://www.thatsoftwaredude.com/images/post/0f631eeb-6c4a-4bfd-9f86-e0a08ae8584b.png');
+	height: 100px;
+	width: 90px;
+}
+
+.card .diamonds
+{
+	background-position-y: 100px;
+}
+
+.card .hearts
+{
+	background-position-x: 90px;
+}
+
+.card .clubs
+{
+	background-position-x:90px;
+	background-position-y:100px;
+}

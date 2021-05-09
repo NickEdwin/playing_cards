@@ -8,10 +8,17 @@ describe "Landing page" do
 
   it "displays all cards" do
     visit "/"
-    expect(page).to have_content("The 2 of ♣")
-    expect(page).to have_content("The 2 of ♥")
-    expect(page).to have_content("The 2 of ♦")
-    expect(page).to have_content("The 2 of ♠")
+    expect(page).to have_css('.card')
+
+    expect(page).to have_css('.card .hearts')
+    expect(page).to have_css('.card .diamonds')
+    expect(page).to have_css('.card .spades')
+    expect(page).to have_css('.card .clubs')
+
+    expect(page).to have_css('.value', text: '2', count: 4)
+    expect(page).to have_css('.value', text: '3', count: 4)
+    expect(page).to have_css('.value', text: 'Q', count: 4)
+    expect(page).to have_css('.value', text: 'A', count: 4)
   end
 
   it 'contains a button to shuffle the cards' do
