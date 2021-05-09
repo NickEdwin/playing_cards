@@ -1,6 +1,6 @@
 <h1>Card Shuffler!</h1>
 
-<a href="/shuffled" class="btn">Shuffle the cards!</a>
+<%= button_to 'Shuffle the cards!', "/shuffled", method: :get %>
 
 <% @deck.cards.each do |card| %>
   <p>The <%= card.rank %> of <%= card.suit %></p>
