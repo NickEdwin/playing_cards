@@ -15,6 +15,14 @@ describe "Landing page" do
   end
 
   it 'contains a button to shuffle the cards' do
+    visit "/"
     page.has_button?('Shuffle the cards!')
+  end
+
+  it 'follows button to new page' do
+    visit "/"
+    click_button('Shuffle the cards!')
+
+    expect(current_path).to eq("/shuffled")
   end
 end
