@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-    root to: "welcome#index"
+  root to: "cards#index"
+
+  get "/shuffled", to: "cards#shuffle"
 end
